@@ -3,8 +3,6 @@ import { useLocalStorageState } from "./../hooks/useLocalStorageState";
 
 const DarkModeContext = createContext();
 
-/*eslint-disable*/
-
 function DarkModeProvider({ children }) {
   const [isDarkMode, setIsDarkMode] = useLocalStorageState(false, "isDarkMode");
 
